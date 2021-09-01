@@ -342,6 +342,11 @@ Types of directives in Angular:
 * Using Angular pipes you can transform data like strings, currency amounts, dates, many other values for display.
 * You can use pipe symbol (|) for Angular pipes and syntax is as follows
 
+<details>
+<!-- after summary  and close details need an empty line -->
+<summary>Click to view Pipes</summary>
+
+
 Syntax:
 
 ```
@@ -382,3 +387,5 @@ TitleCasePipe:
   * Transforms text to title case. Capitalizes the first letter of each word and transforms the rest of the word to lower case.
 UpperCasePipe:
   * Transforms text to all upper case.
+
+</details>
