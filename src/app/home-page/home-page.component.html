@@ -1,1 +1,21 @@
-<p>home-page works!</p>
+<h2 [ngStyle]="{'font-size.px': 30, 'text-align': 'center'}">{{componentName}} works!</h2>
+
+<div class="container">
+	<h5>Two Way Binding</h5>
+    <div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<input class="form-control" [(ngModel)]="userName" placeholder="userName">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<span>{{ userName }}</span>
+			</div>
+    </div>
+</div>
+
+
+
+
+
+
