@@ -9,6 +9,7 @@
         <th>ID</th>
         <th>Product Name</th>
         <th>Product Type</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -16,10 +17,12 @@
         <td>{{project.id}}</td>
         <td>{{project.product_name}}</td>
         <td>{{project.product_type}}</td>
+        <td><a routerLink="/project_details" class="nav-link" routerLinkActive="active">Project Details</a></td>
       </tr>
     </tbody>
   </table>
   <br>
+
   
   <h5>Directives ngIf</h5>
   <div class="row">
