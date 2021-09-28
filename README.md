@@ -389,3 +389,11 @@ UpperCasePipe:
   * Transforms text to all upper case.
 
 </details>
+
+
+
+
+ng g c components/book/book-details  
+
+
+npm install angular-notifier

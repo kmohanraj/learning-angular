@@ -1,0 +1,36 @@
+<div class="container mt-5 mb-3 book">
+  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+    <span>Edit Book</span>
+  </div>
+  <div *ngIf="book.id" class="edit-form mt-2">
+    <form>
+      <div class="row" >
+        <div  class="col-md-6">
+            <label for="inputTitle4">Title</label>
+            <input type="text" class="form-control mt-2" id="title" [(ngModel)]="book.title" name="title">
+        </div>
+        <div class="col-md-6">
+            <label for="name">Author Name</label>
+            <input type="text" class="form-control mt-2" id="authorName" [(ngModel)]="book.authorName" name="authorName">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group" class="col-md-6">
+            <label for="name">Description</label>
+            <textarea type="text" class="form-control mt-2" id="description" [(ngModel)]="book.description" name="description"></textarea>
+        </div>
+        <div class="form-group" class="col-md-6">
+            <label for="name">Published</label>
+            <input type="text" class="form-control mt-2" id="published" [(ngModel)]="book.published" name="published">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 mt-4">
+            <button type="submit" class="btn btn-primary" (click)="updateBook()">Update Book</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  
+    

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 export interface Project {
   id: number,
@@ -27,6 +28,8 @@ const PROJECTS: Project[] = [
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+
+  @ViewChildren(ProjectDetailsComponent) projectDetails;
 
   product_details = "Product Details"
 
