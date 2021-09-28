@@ -28,12 +28,8 @@ export class AddBookComponent implements OnInit {
     });
   }
 
-
   onSubmit() {
     this.bookService.createBook(this.addForm.value).subscribe(data => {
-      console.log("------------")
-      console.log(data)
-      console.log("------------")
       this.submitted = true;
       this.router.navigate(['books'])
     })

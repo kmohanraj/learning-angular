@@ -1,0 +1,12 @@
+.checked {
+  color: orange;
+}
+
+.book {
+  .published-stye {
+    font-size: 12px;
+    .days-ago {
+      font-size: 10px;
+    }
+  }
+}

@@ -2,10 +2,9 @@
   <div *ngIf="loading else loaded" class="loader"></div>
 </div>
 
-
 <div class="container">
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <button routerLink="/add_book" class="btn btn-primary mt-md-2">Add New Book</button>
+    <button routerLink="/add_book" class="btn btn-primary mt-md-2"><i class="fa fa-plus"></i> Add New Book</button>
   </div>
   <table class="table table-hover mt-5">
     <thead class="table-dark">
@@ -23,11 +22,11 @@
         <td>{{i+1}}</td>
         <td>{{book.title}}</td>
         <td>{{book.authorName}}</td>
-        <td>{{book.description}}</td>
+        <td class="description-style">{{book.description}}</td>
         <td>{{book.published}}</td>
         <td>
-          <a class="cursor-pointer m-3" (click)="bookDetails(book.id)"><i class="fa fa-eye"></i></a>
-          <a class="cursor-pointer m-3" title="delete" data-toggle="tooltip" (click)="deleteBook(book.id)"><i class="fa fa-minus-circle"></i></a>
+          <a class="cursor-pointer m-3" (click)="bookDetails(book.id)"><i class="fa fa-edit fa-lg"></i></a>
+          <a class="cursor-pointer m-3" title="delete" data-toggle="tooltip" (click)="deleteBook(book.id)"><i class="fa fa-minus-circle fa-lg"></i></a>
         </td>
       </tr>
     </tbody>

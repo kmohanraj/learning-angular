@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Book } from '../../book.model';
+import { Book } from '../../../models/book.model';
 import { BookService } from 'src/app/services/book.service';
 import { Observable } from 'rxjs';
 
@@ -26,6 +26,12 @@ export class BookDetailsComponent implements OnInit {
     this.id = this.route.snapshot.params['id']
     this.bookService.getBookById(this.id).subscribe(data => {
       this.book = data;
+    })
+  }
+
+  updateBook() {
+    this.bookService.updateBook(this.book.id, this.book).subscribe(data => {
+      this.router.navigate(["admin"])
     })
   }
 }

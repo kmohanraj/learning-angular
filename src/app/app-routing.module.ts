@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   { path: 'books', component: BookListComponent },
   { path: 'add_book', component: AddBookComponent },
   { path: 'book_details/:id', component: BookDetailsComponent },
-  { path: '', redirectTo: '/home-page', pathMatch: 'full' },
+  { path: '', redirectTo: '/books', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ]
 @NgModule({

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BookService } from 'src/app/services/book.service';
-import { Book } from '../../book.model';
+import { Book } from '../../../models/book.model';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

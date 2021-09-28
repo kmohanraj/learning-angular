@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { BookService } from 'src/app/services/book.service';
-import { Book } from 'src/app/components/book.model';
+import { Book } from 'src/app/models/book.model';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 

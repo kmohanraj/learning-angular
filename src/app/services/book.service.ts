@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs";
-import { Book } from "../components/book.model";
+import { Book } from "../models/book.model";
 
 
 @Injectable({
@@ -10,26 +10,33 @@ import { Book } from "../components/book.model";
 
 export class BookService {
   private baseUrl = "http://localhost:8080/api/v1/books";
-  private baseUrl1 = "http://localhost:8080/api/v1/book";
+  private baseUrl2 = "http://localhost:8080/api/v1/book";
 
   private endPoint: string;
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<any>{
-    return this.http.get(`${this.baseUrl}`);
+    this.endPoint = this.baseUrl
+    return this.http.get(this.endPoint);
   }
 
   createBook(book: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}`, book);
+    this.endPoint = this.baseUrl
+    return this.http.post(this.endPoint, book);
   }
 
   deleteBook(id) {
-    this.endPoint = "http://localhost:8080/api/v1/book"
+    this.endPoint = this.baseUrl2
     return this.http.delete(this.endPoint + "/" + id);
   }
 
   getBookById(id) {
-    this.endPoint = "http://localhost:8080/api/v1/book"
+    this.endPoint = this.baseUrl2
     return this.http.get(this.endPoint + "/" + id)
+  }
+
+  updateBook(id, data) {
+    this.endPoint = this.baseUrl2
+    return this.http.put(this.endPoint+ "/"+ id, data)
   }
 }
