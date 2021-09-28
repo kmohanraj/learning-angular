@@ -390,10 +390,11 @@ UpperCasePipe:
 
 </details>
 
-
-
-
 ng g c components/book/book-details  
-
-
 npm install angular-notifier
+
+
+![Screenshot](user.png)
+
+
+![Screenshot](admin.png)
