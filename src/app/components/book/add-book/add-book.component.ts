@@ -13,8 +13,7 @@ export class AddBookComponent implements OnInit {
   addForm: FormGroup;
 
   private submitted = false;
-  dt: any;
-  dataDisplay: any;
+  
   constructor(private formBuilder: FormBuilder, private router: Router, private bookService: BookService) { }
   
   ngOnInit() {

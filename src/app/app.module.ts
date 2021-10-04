@@ -12,6 +12,8 @@ import { ProjectDetailsComponent } from './components/projects/project-details/p
 import { BookListComponent } from './components/book/book-list/book-list.component';
 import { AddBookComponent } from './components/book/add-book/add-book.component';
 import { BookDetailsComponent } from './components/book/book-details/book-details.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { BookDetailsComponent } from './components/book/book-details/book-detail
     BookListComponent,
     AddBookComponent,
     BookDetailsComponent,
+    LoginComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
