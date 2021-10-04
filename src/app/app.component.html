@@ -1,13 +1,23 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-info">
   <a class="navbar-brand" href="#"><span [ngStyle]="{'font-weight': 'bold'}">Learning</span></a>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <!-- <li class="nav-item"><a routerLink="/home-page" class="nav-link" routerLinkActive="active">Home Page</a></li> -->
       <!-- <li class="nav-item"><a routerLink="/projects" class="nav-link" routerLinkActive="active">Projects</a></li> -->
       <!-- <li class="nav-item"><a routerLink="/book_details" class="nav-link" routerLinkActive="active">Project Details</a></li> -->
       <li class="nav-item"><a routerLink="/admin" class="nav-link" routerLinkActive="active">Admin</a></li>
       <li class="nav-item"><a routerLink="/books" class="nav-link" routerLinkActive="active">Book</a></li>
     </ul>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="nav navbar-nav smooth-scroll">
+          <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" routerLink="/login">Login</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" routerLink="/registration">Sign-up</a>
+          </li> -->
+      </ul>
+  </div>
   </div>
 </nav>
 

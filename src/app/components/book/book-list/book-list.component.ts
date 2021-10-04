@@ -28,5 +28,9 @@ export class BookListComponent implements OnInit {
       }
     )
   }
+
+  bookDetails(id) {
+    this.router.navigate(['book_details', id])
+  }
   
 }

@@ -8,6 +8,8 @@ import { ProjectDetailsComponent } from './components/projects/project-details/p
 import { BookListComponent } from './components/book/book-list/book-list.component'; 
 import { AddBookComponent } from './components/book/add-book/add-book.component'; 
 import { BookDetailsComponent } from './components/book/book-details/book-details.component';
+import { RegistrationComponent } from './components/registration/registration.component';
+import { LoginComponent } from './components/login/login.component';
 
 const appRoutes: Routes = [
   { path: 'home-page', component: HomePageComponent },
@@ -16,6 +18,8 @@ const appRoutes: Routes = [
   { path: 'books', component: BookListComponent },
   { path: 'add_book', component: AddBookComponent },
   { path: 'book_details/:id', component: BookDetailsComponent },
+  { path: 'registration', component: RegistrationComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', redirectTo: '/books', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ]
